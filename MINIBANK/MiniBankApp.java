@@ -340,11 +340,6 @@ public class MiniBankApp {
         BankService service = new BankService(repo);
         Scanner scanner = new Scanner(System.in);
 
-        try {
-            service.openAccount("SAVINGS", "Alice", 5000);
-            service.openAccount("CURRENT", "Bob", 3000);
-        } catch (BankException ignored) {}
-
         boolean running = true;
         while (running) {
             System.out.println("\n--- MAIN MENU ---");
